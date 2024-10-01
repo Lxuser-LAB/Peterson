@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление дроном</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="drone-container">
+        <h1>Панель управления дроном</h1>
+        <div class="drone-status">
+            <h2>Текущий статус</h2>
+            <div id="status-display">
+                <p>Высота: <span id="altitude">0</span> м</p>
+                <p>Скорость: <span id="speed">0</span> м/с</p>
+                <p>Позиция: <span id="position">(0, 0)</span></p>
+                <p>Заряд батареи: <span id="battery-level">100</span>%</p>
+            </div>
+        </div>
+
+        <h2>Управление дроном</h2>
+        <div class="drone-controls">
+            <label for="altitude-input">Установить высоту:</label>
+            <input type="number" id="altitude-input" placeholder="Введите высоту">
+            <button id="set-altitude-btn">Установить высоту</button>
+
+            <label for="speed-input">Установить скорость:</label>
+            <input type="number" id="speed-input" placeholder="Введите скорость">
+            <button id="set-speed-btn">Установить скорость</button>
+
+            <label for="position-input">Установить позицию:</label>
+            <input type="text" id="position-input" placeholder="Введите позицию (x, y)">
+            <button id="set-position-btn">Установить позицию</button>
+
+            <button id="takeoff-btn">Взлет</button>
+            <button id="patrol-btn">Патрулирование</button>
+            <button id="land-btn">Посадка</button>
+            <button id="return-btn">Возврат на базу</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

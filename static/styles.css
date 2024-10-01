@@ -1,0 +1,106 @@
+/* Установим базовые параметры */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.drone-container {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.drone-status {
+    margin-bottom: 20px;
+}
+
+#status-display p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin: 15px 0 5px;
+    color: #666;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3d8b40;
+}
+
+.drone-controls button {
+    margin: 5px 0;
+}
+
+.drone-controls input {
+    margin-bottom: 20px;
+}
+
+.drone-controls button#takeoff-btn,
+.drone-controls button#patrol-btn,
+.drone-controls button#land-btn,
+.drone-controls button#return-btn {
+    background-color: #3498db;
+}
+
+.drone-controls button#takeoff-btn:hover,
+.drone-controls button#patrol-btn:hover,
+.drone-controls button#land-btn:hover,
+.drone-controls button#return-btn:hover {
+    background-color: #2980b9;
+}
+
+.drone-controls button#takeoff-btn:active,
+.drone-controls button#patrol-btn:active,
+.drone-controls button#land-btn:active,
+.drone-controls button#return-btn:active {
+    background-color: #2471a3;
+}
+
